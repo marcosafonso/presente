@@ -6,8 +6,9 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 import Home from './screens/Home';
 import NovaTurma from './screens/NovaTurma';
+import Aluno from './screens/Aluno';
 
-import './App.css'
+import './App.css';
 
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/turma/nova" element={<NovaTurma />} />
+        <Route path="/aluno/novo" element={<Aluno />} />
         {/* <Route path="/turmas" element={<Turmas />} />
         <Route path="/turma/:id" element={<Turma />} />
         <Route path="/turma/:id/chamada" element={<Chamada />} /> */}
